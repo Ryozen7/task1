@@ -15,7 +15,7 @@ function App() {
       
       <header className="row">
         <div>
-          <Link id= 'link' to='/' className="brand">Products Lists</Link>
+          <Link id= 'link' to='/task1' className="brand">Products Lists</Link>
         </div>
       
         <div className = "info">
@@ -26,7 +26,7 @@ function App() {
       <Route path="/create/:id" component = {Create}  />
       <Route path="/product/:id" component = {Product} />
   
-      <Route path="/" exact= {true} component = {Home} />
+      <Route path="/task1" exact= {true} component = {Home} />
   
       <Route path="/register" component = {Register} />
     

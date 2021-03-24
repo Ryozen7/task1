@@ -52,11 +52,11 @@ function Product (props, i) {
 						<div className= "mb3">Price: $ <input onChange={onPriceChange} className='inputfield' type='text' value={prodprice}/></div>
 						<div className= "mb3">Description: </div>
 						<input  onChange={onDescriptionChange} className='inputfield desc' type='text' value={proddescription}/>
-						<Link to='/'> <button onClick= {onSave} className= "row f2 mt2 "> Save </button></Link>
+						<Link to='/task1'> <button onClick= {onSave} className= "row f2 mt2 "> Save </button></Link>
 					</div>
 				</div>
 				
-				<Link  className= "row center mt6 f2" to='/'>Back to the Products </Link>  
+				<Link  className= "row center mt6 f2" to='/task1'>Back to the Products </Link>  
 			</div>)
 }
 

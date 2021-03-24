@@ -61,7 +61,7 @@ function Create() {
 						<div className= "mb3">Price: $ <input onChange={onPriceChange} className='inputfield' type='text'/></div>
 						<div className= "mb3">Description: </div>
 						<input  onChange={onDescriptionChange} className='inputfield desc' type='text'/>
-						<Link to= '/'> <button onClick={onCreate} className= "row f2 mt2 "> Create </button> </Link>
+						<Link to= '/task1'> <button onClick={onCreate} className= "row f2 mt2 "> Create </button> </Link>
 					</div>
 					</main>
 					</article>
