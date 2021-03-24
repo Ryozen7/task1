@@ -1,0 +1,166 @@
+
+html {
+	font-size: 62.5%; /* */
+	box-sizing: border-box;
+}
+body {
+	margin: 0;
+	height: 100vh;
+	font-size: 1.6rem;
+	font-family: Lucida Console;
+	-webkit-font-smoothing: antialiased;
+  	-moz-osx-font-smoothing: grayscale;
+
+}
+
+#root {
+	height: 100%;
+}
+
+/*Particles Lay-out*/
+.particles {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 0;
+}
+
+/* Lay-out*/
+.grid-container{
+	display: grid;
+	grid-template-areas: 
+		'header'
+		'main'
+		'footer';
+	grid-template-columns: 1fr;
+	grid-template-rows: 5rem 1fr 5rem ;
+	height: 100%;
+}
+
+header {
+	grid-area: header;
+	background:  linear-gradient(to right, rgb(255, 162, 0), rgb(230, 120, 61));
+	z-index: 0 ;
+}
+main {
+	grid-area: main;
+	background:  linear-gradient(to right, rgb(255, 255, 255), rgb(215, 249, 248));
+}
+footer {
+	grid-area: footer;
+	background:  linear-gradient(to right, rgb(255, 162, 0), rgb(230, 120, 61));
+	z-index: 0;
+}
+
+/*Header Lay-out*/
+header span {
+	color: rgb(0,0,8);
+	padding: 1rem;
+	cursor: pointer;
+}
+
+.register {
+	z-index: 0;
+}
+
+.row {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: center;
+	align-content: center;
+}
+
+.brand {
+	margin-left: 10px;
+	font-size: 3rem;
+	font-weight: bold;
+	
+}
+a.container {
+	font-size: 2.5rem;
+	font-family: Comic Sans MS;
+	margin: 0 0.5em;
+}
+
+.info {
+	margin-right: 1em;
+}
+
+
+/* Card Lay-out*/
+.center {
+	justify-content: center;
+}
+
+.card {
+	border: 0.1rem #ffffff solid;
+	border-radius: 0.5rem;
+	margin: 1rem;
+	z-index: 1;
+	position: relative;
+	animation-name: example;
+  	animation-duration: 2s;
+  	animation-delay: 0s;
+}
+@keyframes example {
+  0%   {left:70rem;}
+  100% {left:0rem;}
+}
+
+.card-info {
+	padding: 1rem;
+}
+
+img {
+  margin: 0.2em 0.2em 0.2em 0.2em;
+  border: 1px solid #ddd;
+  border-radius: 0.5rem;
+  padding: 5px;
+}
+
+.image {
+	display: block;
+	margin: 5px;
+	max-width: 29rem;
+}
+
+#link {
+	color: black;
+}
+#link:link {
+  text-decoration: none;
+}
+#link:visited {
+  text-decoration: none;
+}
+#link:active {
+  text-decoration: none;
+}
+
+.space {
+	margin-bottom: 0.5em;
+}
+
+/* Search Bar*/
+.search {
+	margin-top: 1em;
+	padding: 1em;
+	margin: 2em;
+	z-index: 0;
+}
+
+input {
+	z-index: 0;
+}
+
+
+/*Footer*/
+
+footer {
+	padding-top: 1.5rem; 
+	text-align: center;
+	font-size: 2rem;
+}
